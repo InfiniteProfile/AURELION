@@ -1,125 +1,113 @@
 <!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080808">
-  <meta name="description" content="AURELION — Beyond Existence. An extraordinary journey through a universe of light, darkness, and gold.">
-  <title>AURELION — Beyond Existence</title>
+  <meta name="description" content="AURELION — an infinite universe of unique identities.">
+  <title>AURELION — Infinite Universe</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <canvas id="starfield" aria-hidden="true"></canvas>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>  <header class="topbar">
+  <canvas id="starfield" aria-hidden="true"></canvas>  <header class="topbar">
     <a class="brand" href="#" aria-label="AURELION home">
       <span class="brand-symbol">✦</span>
       <span>AURELION</span>
     </a>
-    <span class="top-label">BEYOND EXISTENCE</span>
-    <a class="menu-link" href="#realms">EXPLORE <span>↗</span></a>
+    <span class="header-label">ONE UNIVERSE. INFINITE IDENTITIES.</span>
+    <a class="header-link" href="#universe">EXPLORE ↓</a>
   </header>  <main>
     <section class="hero">
-      <div class="eyebrow"><span class="eyebrow-line"></span> A UNIVERSE WITHOUT LIMITS <span class="eyebrow-line"></span></div>  <h1>BEYOND<br><span>EXISTENCE.</span></h1>
-
-  <p class="hero-description">
-    Beyond the stars. Beyond imagination.<br>
-    Somewhere between infinity and eternity.
-  </p>
-
-  <a class="discover-button" href="#realms">
-    <span>DISCOVER THE UNKNOWN</span>
-    <span class="button-arrow">↓</span>
-  </a>
-
-  <div class="universe" aria-label="Animated golden celestial object surrounded by orbital rings">
-    <div class="universe-halo halo-one"></div>
-    <div class="universe-halo halo-two"></div>
-    <div class="orbit orbit-one"><span class="orbit-dot"></span></div>
-    <div class="orbit orbit-two"><span class="orbit-dot"></span></div>
-    <div class="orbit orbit-three"><span class="orbit-dot"></span></div>
-    <div class="core-glow"></div>
-    <div class="core">
-      <div class="core-inner"></div>
+      <div class="eyebrow"><span></span> BEYOND EXISTENCE <span></span></div>
+      <h1>INFINITE<br><span>IDENTITIES.</span></h1>
+      <p class="hero-description">
+        Every number reveals another identity.<br>
+        Every journey leads to another universe.
+      </p>  <form id="searchForm" class="search-form">
+    <label for="profileSearch">FIND ANY IDENTITY</label>
+    <div class="search-box">
+      <span class="search-icon">⌕</span>
+      <input
+        id="profileSearch"
+        type="text"
+        inputmode="numeric"
+        autocomplete="off"
+        spellcheck="false"
+        placeholder="Enter any profile number..."
+        aria-label="Profile number"
+      >
+      <button type="submit">FIND ↗</button>
     </div>
-    <div class="core-cross"></div>
-    <div class="universe-caption">THE ETERNAL CORE</div>
+    <p class="search-hint">From #1 to numbers beyond imagination.</p>
+  </form>
+
+  <div class="cosmos" aria-hidden="true">
+    <div class="cosmos-ring ring-a"></div>
+    <div class="cosmos-ring ring-b"></div>
+    <div class="cosmos-ring ring-c"></div>
+    <div class="cosmos-core"></div>
+    <div class="cosmos-label">THE ETERNAL CORE</div>
   </div>
 
-  <div class="hero-footer">
-    <span>INFINITE POSSIBILITY</span>
-    <span class="footer-center">✧</span>
-    <span>ETERNAL DISCOVERY</span>
-  </div>
-</section>
-
-<section class="realms section-reveal" id="realms">
-  <div class="section-heading">
-    <span class="section-kicker">THE UNKNOWN AWAITS</span>
-    <h2>Choose your <span>universe.</span></h2>
-    <p>Every horizon hides a world that has never been imagined.</p>
-  </div>
-
-  <div class="realm-grid">
-    <article class="realm-card realm-dark">
-      <div class="realm-number">01 / THE VOID</div>
-      <div class="realm-art void-art" aria-hidden="true">
-        <div class="void-ring"></div>
-        <div class="void-center"></div>
-      </div>
-      <div class="realm-info">
-        <h3>The Silent Void</h3>
-        <p>Where darkness becomes infinite possibility.</p>
-        <span class="realm-symbol">✦</span>
-      </div>
-    </article>
-
-    <article class="realm-card realm-gold">
-      <div class="realm-number">02 / THE ORIGIN</div>
-      <div class="realm-art origin-art" aria-hidden="true">
-        <div class="origin-sun"></div>
-        <div class="origin-orbit"></div>
-        <div class="origin-orbit origin-orbit-two"></div>
-      </div>
-      <div class="realm-info">
-        <h3>The Golden Origin</h3>
-        <p>Where the first light awakens eternity.</p>
-        <span class="realm-symbol">✧</span>
-      </div>
-    </article>
-
-    <article class="realm-card realm-blue">
-      <div class="realm-number">03 / THE INFINITE</div>
-      <div class="realm-art infinite-art" aria-hidden="true">
-        <div class="infinite-ring"></div>
-        <div class="infinite-center"></div>
-      </div>
-      <div class="realm-info">
-        <h3>The Endless Beyond</h3>
-        <p>Where the edge of existence disappears.</p>
-        <span class="realm-symbol">∞</span>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="final-section section-reveal">
-  <div class="final-star">✦</div>
-  <p class="section-kicker">THERE IS NO FINAL FRONTIER</p>
-  <h2>Infinity is only<br>the <span>beginning.</span></h2>
-  <a class="discover-button" href="#" id="return-top">
-    <span>RETURN TO THE COSMOS</span>
-    <span class="button-arrow">↑</span>
+  <a class="scroll-cue" href="#universe">
+    <span class="scroll-line"></span>
+    DESCEND INTO INFINITY
   </a>
 </section>
 
-  </main>  <footer class="site-footer">
+<section id="universe" class="universe-section">
+  <div class="section-heading">
+    <div class="section-kicker">THE INFINITE DIRECTORY</div>
+    <h2>Discover <span>the unknown.</span></h2>
+    <p>There is no last profile. Your next discovery is waiting below.</p>
+  </div>
+
+  <div class="feed-toolbar">
+    <div>
+      <span class="live-dot"></span>
+      <span>INFINITE STREAM</span>
+    </div>
+    <div id="rangeLabel">IDENTITIES #1–#24</div>
+  </div>
+
+  <div id="profileGrid" class="profile-grid" aria-live="polite"></div>
+
+  <div id="loadingIndicator" class="loading-indicator">
+    <span class="loader"></span>
+    <span>GENERATING NEW IDENTITIES</span>
+  </div>
+
+  <div id="scrollSentinel" aria-hidden="true"></div>
+
+  <div class="manual-controls">
+    <button id="loadMore" class="load-more" type="button">
+      GENERATE MORE IDENTITIES <span>↓</span>
+    </button>
+  </div>
+
+  <p class="infinite-note">
+    ∞ &nbsp; NO FINAL PAGE. NO FINAL IDENTITY. &nbsp; ∞
+  </p>
+</section>
+
+<section class="closing-section">
+  <div class="closing-symbol">✦</div>
+  <p class="section-kicker">THE UNIVERSE NEVER ENDS</p>
+  <h2>Keep going.<br><span>Keep discovering.</span></h2>
+  <button id="backToTop" class="back-top" type="button">
+    RETURN TO THE BEGINNING ↑
+  </button>
+</section>
+
+  </main>  <footer class="footer">
     <a class="brand footer-brand" href="#">
       <span class="brand-symbol">✦</span>
       <span>AURELION</span>
     </a>
-    <p>CRAFTED FOR THE INFINITE.</p>
-    <span class="copyright">© <span id="year"></span> AURELION</span>
-  </footer>
+    <span>BUILT FOR INFINITY.</span>
+    <span>© <span id="year"></span></span>
+  </footer>  <noscript>
+    <p class="noscript">Please enable JavaScript to explore the infinite universe.</p>
+  </noscript>
 </body>
 </html>
